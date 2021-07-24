@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Document</title>
+</head>
+<body class="preload">
+    <div id="tarolo">
+        <div class="szekcio">
+            <form onclick="return false">
+                <input type="text" placeholder="youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ" id="mezo">
+                <button onclick="kereses()">Keresés</button>
+            </form>
+            <div class="adatok">
+                <div class="kep">
+                    <img src="" alt="" id="img">
+                    <h2 id="cs"></h2>
+                </div>
+                <div class="szoveg">
+                    <p>Feliratkozók száma: <span id="f"></span></p>
+                    <p>Megtekintések száma: <span id="m"></span></p>
+                    <p>Videók száma: <span id="v"></span></p>
+                </div>
+            </div>
+            <div id="hiba">
+                <p id="hibauzenet">Hiba!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="kod.js"> </script>
+</body>
+</html>
