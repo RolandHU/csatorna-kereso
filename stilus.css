@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: rgb(43, 96, 240);
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+
+#tarolo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(43, 95, 240) 58%, transparent 100%), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://yt3.ggpht.com/3ocUwGfq2GBN3gCA0fHPiT7pc351vDQT5YcSMxPGBFkKzG4XJZINbh6ciKL4RrodiKCBhh-Prg=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.szekcio {
+    width: 600px;
+    position: absolute;
+    top: 40vh;
+}
+
+.szekcio form {
+    width: 100%;
+    display: flex;
+}
+
+.szekcio form input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    font-size: 14px;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(245, 245, 245);
+}
+
+.szekcio form input:focus {
+    outline: none;
+}
+
+.szekcio form button {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    font-size: 17px;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: rgb(46, 137, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover:hover) {
+    .szekcio form button:hover {
+        background: rgb(43, 125, 233);
+        transition: background-color 0.3s;
+    }    
+}
+
+.adatok {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    color: rgb(36, 36, 36);
+    background: rgb(245, 245, 245);
+}
+
+.kep {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#cs {
+    display: flex;
+    line-height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+#img {
+    height: 100px;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+.szoveg {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.szoveg span {
+    color: rgb(46, 137, 255);
+}
+
+#hiba {
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+    background: rgb(245, 245, 245);
+}
+
+#hibauzenet {
+    padding: 5px;
+    font-size: 17px;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 42, 42);
+}
+
+@media screen and (max-width: 620px) {
+    .szekcio {
+        width: calc(100vw - 20px);
+    }
+}
